@@ -1,0 +1,127 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #335768;
+}
+
+.form {
+    background-color: #d8dbdc;
+    width: 500px;
+    margin: 50px auto;
+}
+
+.container_registration {
+    padding: 20px;
+}
+
+.text-rd {
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.change-contacts {
+    margin-top: 20px;
+}
+
+.container-contacts {
+    display: flex;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.title-contacts, .title-education, .title-skills, .title-about_my {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contacts_text {
+    text-align: right;
+    width: 40%;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contacts-input {
+    width: 60%;
+}
+
+.change-education, .change-skills, .change-about_my{
+    display: flex;
+    margin-top: 20px;
+}
+
+.title-education, .title-skills, .title-about_my {
+    display: inline-block;
+    width: 40%;
+}
+.input-education, .input-skills, .input-about_my{
+    display: inline-block;
+    width: 58%;
+}
+
+.input-education .input, .input-skills .input {
+    width: 100%;
+    height: 24px;
+}
+
+.input-about_my .input {
+    width: 100%;
+    height: 100px;
+}
+
+.button-change  {
+    margin: 30px 0 0 120px;
+}
+
+.button{
+    border-radius: 3px;
+    border: none;
+    background-color: green;
+    width: 60%;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*DUMP*/
+
+.dump {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.form-dump {
+    display: inline-block;
+    margin: 5px auto;
+    width: 40%;
+}
+
+.dump-text {
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.dump-button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+/*.button {*/
+/*    */
+/*}*/

@@ -1,0 +1,57 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #335768;
+}
+
+.form {
+  background-color: #d8dbdc;
+  width: 500px;
+  margin: 200px auto;
+}
+
+.container-logout {
+  padding: 40px;
+}
+
+.title {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.title-item {
+  display: inline-block;
+  min-width: 40%;
+  margin: 0 10px;
+}
+
+.title-line {
+  margin-top: 40px;
+  border-top: 2px solid #6c6868;
+}
+
+.title-text {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logout-button {
+  margin: 0 auto;
+  height: 30px;
+  width: 300px;
+}
+
+.button {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  border: 2px solid red;
+  background-color: green;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}

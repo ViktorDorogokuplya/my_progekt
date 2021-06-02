@@ -1,0 +1,142 @@
+body {
+    background-color: #335768;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+.main-container {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: -2px 8px 29px 17px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    width: 800px;
+    /*border: 2px solid green;*/
+    margin: 0 30px 40px 30px;
+}
+
+
+.about-me {
+    padding: 80px 30px;
+    color: #ffffff;
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+.about-me-name {
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-bottom: 30px;
+}
+
+.about-me-profession {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+.main-profile-title {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.main-profile-text {
+    line-height: 20px;
+    font-weight: 400;
+}
+.main-professional-experience {
+    margin: 40px 0;
+}
+
+.main-professional-experience_title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.work-company {
+    margin-bottom: 20px;
+}
+
+.work-company-title {
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+}
+
+.work-company-about {
+    margin-bottom: 15px;
+}
+
+.work-company-text {
+    line-height: 20px;
+}
+
+.work-company-experience {
+    line-height: 20px;
+    margin-left: 18px;
+}
+
+.sidebar-section {
+    background-color: #95C79D;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.sidebar-section-container {
+    margin: 10px 25px 40px 25px;
+
+}
+
+
+.sidebar-section-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+.sidebar-content {
+    max-width: 250px;
+}
+
+.info-contacts, .info-education, .info-skills {
+    background-color: black;
+    color: #ffffff ;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 5px 0 5px 5px;
+    margin-bottom: 20px;
+}
+
+.info-contacts_text {
+    line-height: 20px;
+    font-weight: 400;
+
+}
+.info-contacts_mobile, .info-contacts_link, .info-contacts_linked {
+    text-decoration: none;
+    color: #000;
+}
+
+.info-skills_list {
+    margin-left: 18px;
+}
+

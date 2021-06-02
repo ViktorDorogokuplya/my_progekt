@@ -1,0 +1,183 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #335768;
+}
+
+.container-form {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+.about,
+.about-button {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.about-title {
+  width: 20%;
+}
+
+.about-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: right;
+  padding-top: 5px;
+  height: 30px;
+}
+
+.block-input {
+  margin-left: 10px;
+  display: inline-block;
+  width: 60%;
+}
+
+.about-input,
+.contacts-list,
+.contacts-block-text {
+  padding-top: 2px;
+  border: 2px solid #aaa6a6;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.block-gender {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.gender-item {
+  display: inline-block;
+}
+
+.gender-text {
+  margin-left: 10px;
+}
+
+.contacts {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts-list {
+  display: inline-block;
+  width: 15%;
+}
+
+.contacts-block-one {
+  display: inline-block;
+  width: 40%;
+  margin-left: 5px;
+}
+
+.contacts-block-two {
+  display: inline-block;
+  width: 20%;
+  margin-left: 5px;
+}
+
+.contacts-block-thre {
+  display: inline-block;
+  width: 30%;
+  margin-left: 12px;
+}
+
+.contacts-select {
+  border: none;
+  background-color: #ffffff;
+  padding-top: 5px;
+}
+
+.contacts-select,
+.contacts-block-text {
+  width: 100%;
+}
+
+.contacts-button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.button-delete {
+  padding-top: 8px;
+  padding-left: 20px;
+  border: none;
+  color: blue;
+  background-color: #fff;
+}
+
+.contacts-text-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.contacts-text-all {
+  padding-top: 5px;
+}
+.button-add {
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: #9e9898;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-save {
+  background-color: #00aeff;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+}
+
+.sometext-textarea,
+.hobbies-select {
+  height: 90px;
+  border: 2px solid #aaa6a6;
+  border-radius: 5px;
+}
+
+.about-agremment {
+  margin-left: 21%;
+}
+
+.agremment-check {
+  width: 10px;
+}
+
+.button-update {
+  background-color: #00aeff;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+}
+
+.about-next {
+  margin-left: 10px;
+}
+
+.button-next {
+  width: 100px;
+  height: 30px;
+  background-color: #9e9898;
+  border-radius: 5px;
+  border: none;
+}
+
+.about-button {
+  margin-left: 21%;
+  margin-top: 20px;
+}
