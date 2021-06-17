@@ -11,9 +11,6 @@ $connect = mysqli_connect('localhost', 'admin', 'password', 'my_db');
 if ($connect == false) {
     print("Error: Unable to connect to MySQL." . mysqli_connect_error());
 }
-//else {
-//    print("Connection established successfully!");
-//}
 
 $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `name` = '$userName' AND `password` = '$password'");
 
@@ -27,10 +24,9 @@ if (mysqli_num_rows($check_user) > 0) {
       "email" => $user['email']
     ];
     header('Location: ../index.php');
-//    print_r($check_user);
+
 } else {
     $_SESSION['massage'] = "Wrong username and password! Please register!";
-    header('Location: ../index.php?tab=functionality/login');
+    header('Location: ../index.php?tab=pages/login');
 }
 
-//echo mysqli_num_rows($check_user);

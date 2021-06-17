@@ -65,43 +65,39 @@ textarea {
   margin-left: 10px;
 }
 
-.contacts {
+.contacts,
+.mainFolderContact {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.contacts-list {
+/* .contacts-list {
   display: inline-block;
   width: 15%;
-}
-
-.contacts-block-one {
-  display: inline-block;
-  width: 40%;
-  margin-left: 5px;
-}
-
-.contacts-block-two {
-  display: inline-block;
-  width: 20%;
-  margin-left: 5px;
-}
-
-.contacts-block-thre {
-  display: inline-block;
-  width: 30%;
-  margin-left: 12px;
-}
-
-.contacts-select {
-  border: none;
-  background-color: #ffffff;
-  padding-top: 5px;
-}
+} */
 
 .contacts-select,
-.contacts-block-text {
-  width: 100%;
+.input-name,
+.contact-nickname {
+  display: inline-block;
+  width: 30%;
+}
+#contact-name,
+.nickname {
+  background-color: #ffffff;
+  /* padding-top: 5px; */
+  border: 2px solid #aaa6a6;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.select-list {
+  background-color: #ffffff;
+  border: 2px solid #aaa6a6;
+  border-radius: 5px;
+  height: 30px;
+  height: 35px;
 }
 
 .contacts-button {
@@ -109,35 +105,24 @@ textarea {
   margin-left: 10px;
 }
 
-.button-delete {
-  padding-top: 8px;
-  padding-left: 20px;
-  border: none;
-  color: blue;
-  background-color: #fff;
-}
-
 .contacts-text-item {
   display: inline-block;
-  margin-left: 10px;
-}
-
-.contacts-text-all {
   padding-top: 5px;
+  margin-left: 15px;
 }
 .button-add {
   margin-left: 10px;
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: #9e9898;
   border-radius: 5px;
   border: none;
 }
 
-.button-save {
+.button-reset {
   background-color: #00aeff;
   height: 30px;
-  width: 100px;
+  width: 150px;
   border-radius: 5px;
   border: none;
 }
@@ -160,21 +145,23 @@ textarea {
 .button-update {
   background-color: #00aeff;
   height: 30px;
-  width: 100px;
+  width: 150px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
-.about-next {
-  margin-left: 10px;
+.about-cancel {
+  margin-left: 60px;
 }
 
-.button-next {
-  width: 100px;
+.button-cancel {
+  width: 150px;
   height: 30px;
   background-color: #9e9898;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 .about-button {

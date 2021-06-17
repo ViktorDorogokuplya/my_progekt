@@ -16,7 +16,6 @@ body {
 
 .main-content {
     width: 800px;
-    /*border: 2px solid green;*/
     margin: 0 30px 40px 30px;
 }
 
@@ -51,7 +50,7 @@ body {
     padding-bottom: 40px;
 }
 
-.main-profile-text {
+.main-profile-text, .work-experience-content {
     line-height: 20px;
     font-weight: 400;
 }
@@ -80,15 +79,6 @@ body {
     margin-bottom: 15px;
 }
 
-.work-company-text {
-    line-height: 20px;
-}
-
-.work-company-experience {
-    line-height: 20px;
-    margin-left: 18px;
-}
-
 .sidebar-section {
     background-color: #95C79D;
     width: 300px;
@@ -111,8 +101,16 @@ body {
     margin-top: 40px;
 }
 
+ul.sidebar-content{
+    margin-left: 20px;
+}
+
 .sidebar-content {
     max-width: 250px;
+}
+
+.sidebar-content-list {
+    padding-left: 50px;
 }
 
 .info-contacts, .info-education, .info-skills {
@@ -129,11 +127,6 @@ body {
 .info-contacts_text {
     line-height: 20px;
     font-weight: 400;
-
-}
-.info-contacts_mobile, .info-contacts_link, .info-contacts_linked {
-    text-decoration: none;
-    color: #000;
 }
 
 .info-skills_list {

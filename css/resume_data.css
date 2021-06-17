@@ -31,9 +31,11 @@ body {
     height: 30px;
 }
 
-.title-contacts, .title-education, .title-skills, .title-about_my {
+.title{
     font-size: 20px;
     font-weight: bold;
+    display: inline-block;
+    width: 40%;
 }
 
 .contacts_text {
@@ -48,26 +50,22 @@ body {
     width: 60%;
 }
 
-.change-education, .change-skills, .change-about_my{
+.change{
     display: flex;
     margin-top: 20px;
 }
 
-.title-education, .title-skills, .title-about_my {
-    display: inline-block;
-    width: 40%;
-}
-.input-education, .input-skills, .input-about_my{
+.input-item {
     display: inline-block;
     width: 58%;
 }
 
-.input-education .input, .input-skills .input {
+.input {
     width: 100%;
     height: 24px;
 }
 
-.input-about_my .input {
+.input-area {
     width: 100%;
     height: 100px;
 }
@@ -121,7 +119,3 @@ body {
 
 }
 
-
-/*.button {*/
-/*    */
-/*}*/

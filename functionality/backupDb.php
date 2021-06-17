@@ -5,7 +5,7 @@ $user = 'admin';
 $password = 'password';
 $database = 'my_db';
 
-$import = '../process/dumb_db.sql';
+$import = '../storage/dumb_db.sql';
 $command = 'mysql -h' . $host . ' -u' . $user . ' -p' . $password . ' root' . $database . ' < ' . $import;
 exec($command, $output, $worked);
 header('location:/index.php');

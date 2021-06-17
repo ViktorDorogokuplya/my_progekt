@@ -1,6 +1,5 @@
 <?php
-//session_start();
-require_once "process/connectionDB.php";
+require_once "functionality/connectionDB.php";
 
 $connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' .  mysqli_error($connect));
 
@@ -17,21 +16,13 @@ if (count($content) == 0) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/resume_data.css">
     <title>Document</title>
 </head>
 <body>
-<?php
-//require_once 'resume_data.php';
-//?>
-    <form action="../process/change.php" class="form" method="post">
+    <form action="../functionality/change.php" class="form" method="post">
         <div class="container_registration">
             <div class="container-contacts">
                 <p class="text-rd">
@@ -39,7 +30,7 @@ if (count($content) == 0) {
                 </p>
             </div>
             <div class="change-contacts">
-                <p class="title-contacts">Contacts</p>
+                <p class="title">Contacts</p>
                 <div class="container-contacts">
                     <p class="contacts_text">Tel. number</p>
                     <input class="contacts-input" type="text" name="mobile-tel" value="<?php echo $content['mobile-tel']; ?>">
@@ -57,28 +48,52 @@ if (count($content) == 0) {
                     <input class="contacts-input" type="text" name="social" value="<?php echo $content['social']; ?>">
                 </div>
             </div>
-            <div class="change-education">
-                <p class="title-education">
+            <div class="change">
+                <p class="title">
                     Education
                 </p>
-                <div class="input-education">
+                <div class="input-item">
                     <input class="input" type="text" name="education" value="<?php echo $content['education']; ?>">
                 </div>
             </div>
-            <div class="change-skills">
-                <p class="title-skills">
+            <div class="change">
+                <p class="title">
                     Skills
                 </p>
-                <div class="input-skills">
+                <div class="input-item">
                     <input class="input" type="text" name="skills" value="<?php echo $content['skills']; ?>">
                 </div>
             </div>
-            <div class="change-about_my">
-                <p class="title-about_my">
+            <div class="change">
+                <p class="title">
                     About my
                 </p>
-                <div class="input-about_my">
-                    <textarea class="input" name="about_my"><?php echo $content['about_my']; ?></textarea>
+                <div class="input-item">
+                    <textarea class="input-area" name="about_my"><?php echo $content['about_my']; ?></textarea>
+                </div>
+            </div>
+            <div class="change">
+                <p class="title">
+                    Position
+                </p>
+                <div class="input-item">
+                    <input class="input" type="text" name="position" value="<?php echo $content['position']; ?>">
+                </div>
+            </div>
+            <div class="change">
+                <p class="title">
+                    Company name
+                </p>
+                <div class="input-item">
+                    <input class="input" type="text" name="companyName" value="<?php echo $content['companyName']; ?>">
+                </div>
+            </div>
+            <div class="change">
+                <p class="title">
+                    Profession Experience
+                </p>
+                <div class="input-item">
+                    <textarea class="input-area" name="profExperience"><?php echo $content['profExperience']; ?></textarea>
                 </div>
             </div>
             <div class="button-change ">
@@ -90,19 +105,15 @@ if (count($content) == 0) {
     <p class="dump-text">Back up database data</p>
     <div class="dump">
         <div class="form-dump">
-            <form action="../process/dumpDb.php" class="create-dump" method="post">
+            <form action="../functionality/dumpDb.php" class="create-dump" method="post">
             <button class="dump-button" type="submit">create dump</button>
             </form>
         </div>
         <div class="form-dump">
-            <form action="../process/backupDb.php" class="create-dump" method="post">
+            <form action="../functionality/backupDb.php" class="create-dump" method="post">
             <button class="dump-button" type="submit">backup dump</button>
             </form>
         </div>
     </div>
 </div>
-
-
-
 </body>
-</html>

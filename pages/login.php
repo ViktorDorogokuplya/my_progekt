@@ -1,18 +1,10 @@
-<?php
-
-//include "menu.php";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/reset.css"/>
     <link rel="stylesheet" href="../css/login.css"/>
     <title>login</title>
   </head>
   <body>
-    <form class="form" action="../index.php/?process=process/signup" method="post">
+    <form class="form" id="form" action="../index.php/?functionality=functionality/signup" method="post">
       <div class="container-login">
         <div class="title">
           <div class="title-item">
@@ -59,5 +51,11 @@
           ?>
       </div>
     </form>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js" crossorigin="anonymous"></script>
+    <script src="../js/checkLog.js"></script>
   </body>
-</html>
+

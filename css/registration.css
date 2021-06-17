@@ -1,108 +1,112 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #335768;
+  font-family: "Arial", sans-serif;
+  background-color: #335768;
 }
 
 .form {
-    background-color: #d8dbdc;
-    width: 500px;
-    margin: 200px auto;
+  background-color: #d8dbdc;
+  width: 500px;
+  margin: 200px auto;
 }
 
 .container-registration {
-    padding: 50px;
+  padding: 50px;
 }
 
-.title, .name {
-    width: 400px;
-    display: flex;
-    margin-bottom: 20px;
-    height: 30px;
+.title,
+.name {
+  width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+  height: 30px;
 }
 
 .title-line {
-    border-top: 2px solid #6c6868;
+  border-top: 2px solid #6c6868;
 }
 
 .title-item {
-    width: 40%;
+  width: 40%;
 }
 
 .title-text {
-    font-size: 25px;
-    line-height: 20px;
-    text-align: center;
-    padding-top: 5px;
+  font-size: 25px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .text {
-    margin: auto;
-    padding-top: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    padding-top: 5px;
+  margin: auto;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 5px;
 }
 
 .name {
-   justify-content: space-between;
+  justify-content: space-between;
 }
 
 .name-title {
-    width: 45%;
-    margin-right: 8px;
+  width: 45%;
+  margin-right: 8px;
 }
 
 .title-input {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .link-text {
-    text-decoration: none;
-    color: green;
+  text-decoration: none;
+  color: green;
 }
 
 input {
-    border: 2px solid #9e9898;
-    border-radius: 3px;
+  border: 2px solid #9e9898;
+  border-radius: 3px;
 }
 
 .title {
-    display: flex;
+  display: flex;
 }
 
 .title-checkbox {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .checkbox {
-    display: inline-block;
+  display: inline-block;
 }
 
-
 .text-checkbox {
-    display: inline-block;
-    margin-left: 5px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .title-button {
-    width: 100%;
-    height: 100%;
-    background-color: green;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-    border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
 }
 
 .msg {
-    height: 20px;
-    width: 100%;
-    border: 2px solid red;
-    border-radius: 3px;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+  height: 20px;
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
 }
