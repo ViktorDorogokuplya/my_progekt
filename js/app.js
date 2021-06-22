@@ -20,7 +20,7 @@ const btnUpdate = document.getElementById('btn-update');
 const btnNext = document.getElementById('btn-next');
 const formDataContainer = document.getElementById('form-data');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     const formData = new FormData(form),
         data = {};
 
@@ -33,6 +33,6 @@ form.addEventListener('submit', function(e) {
     formDataContainer.innerHTML = JSON.stringify(data, null, 2);
 }, true);
 
-form.addEventListener('reset', function() {
+form.addEventListener('reset', function () {
     formDataContainer.innerHTML = '';
 });

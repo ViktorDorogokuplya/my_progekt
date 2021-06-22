@@ -18,7 +18,6 @@ body {
   width: 400px;
   display: flex;
   margin-bottom: 20px;
-  height: 30px;
 }
 
 .title-line {
@@ -56,7 +55,7 @@ body {
 
 .title-input {
   width: 100%;
-  height: 100%;
+  height: 2.2rem;
 }
 
 .link-text {
@@ -94,14 +93,12 @@ input {
   font-weight: 700;
   border: none;
   border-radius: 3px;
+  padding: 12px 22px;
+  cursor: pointer;
 }
 
 .msg {
-  height: 20px;
   width: 100%;
-  border: 2px solid red;
-  border-radius: 3px;
-  padding: 10px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;

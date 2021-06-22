@@ -10,8 +10,8 @@ const timezoneOffset = new Date(Date.now()).getTimezoneOffset() * 60 * 1000,
     endDate = new Date(nowMiliSeconds - 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
 $("#form").validate({
-    rules:{
-        name:{
+    rules: {
+        name: {
             required: true,
             isLatin: true,
             minlength: 4,
@@ -22,49 +22,49 @@ $("#form").validate({
             email: true,
             minlength: 5,
         },
-        password:{
+        password: {
             required: true,
             minlength: 6,
 
         },
-        birthdate:{
+        birthdate: {
             required: true,
             daterange: [startDate, endDate]
         },
-        agremment:{
+        agremment: {
             required: true,
         },
     },
-    messages:{
-        name:{
+    messages: {
+        name: {
             required: "This field is required",
             rangelength: "Please enter a value with a valid extension.",
             minlength: "Login must be at least 4 characters",
         },
-        email:{
+        email: {
             required: "This field is required",
             email: "Please enter a valid email address."
         },
-        password:{
+        password: {
             required: "This field is required",
-            minlength:"Password must be at least 6 characters"
+            minlength: "Password must be at least 6 characters"
         },
-        birthdate:{
+        birthdate: {
             required: "This field is required",
 
         },
-        agremment:{
+        agremment: {
             required: "This field is required",
 
         },
     }
 });
 
-$.validator.addMethod('isLatin', function(value, element) {
-    return this.optional( element ) || /^[a-z]*$/i.test( value );
+$.validator.addMethod('isLatin', function (value, element) {
+    return this.optional(element) || /^[a-z]*$/i.test(value);
 }, 'Please check your input.');
 
-$.validator.addMethod('daterange', function(value, element, arg) {
+$.validator.addMethod('daterange', function (value, element, arg) {
     if (this.optional(element)) {
         return true;
     }

@@ -72,11 +72,6 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* .contacts-list {
-  display: inline-block;
-  width: 15%;
-} */
-
 .contacts-select,
 .input-name,
 .contact-nickname {
@@ -155,7 +150,8 @@ textarea {
   margin-left: 60px;
 }
 
-.button-cancel {
+.button-next {
+  margin-left: 60px;
   width: 150px;
   height: 30px;
   background-color: #9e9898;

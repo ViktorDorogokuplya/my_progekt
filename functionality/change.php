@@ -13,19 +13,19 @@ $companyName = filter_var(trim($_POST['companyName']), FILTER_SANITIZE_STRING);
 $profExperience = filter_var(trim($_POST['profExperience']), FILTER_SANITIZE_STRING);
 
 
-$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' .  mysqli_error($connect));
+$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' . mysqli_error($connect));
 
 $queryDel = mysqli_query($connect, "DELETE FROM `resume_data` WHERE `type` = 'editable'") or mysqli_error($queryDel);
 
-$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' .  mysqli_error($connect));
+$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' . mysqli_error($connect));
 
-$newData = mysqli_query($connect,"INSERT INTO `resume_data` (`id`, `type`, `mobile-tel`, `contacts-email`, `address`, `social`, `education`, `skills`, `about_my`, `position`, `companyName`, `profExperience`) VALUES (NULL, 'editable', '$telNumber', '$email', '$address', '$socialNetwork', '$education', '$skills', '$aboutMy', '$position', '$companyName', '$profExperience')") or die('Error connect' .  mysqli_error($connect));
+$newData = mysqli_query($connect, "INSERT INTO `resume_data` (`id`, `type`, `mobile-tel`, `contacts-email`, `address`, `social`, `education`, `skills`, `about_my`, `position`, `companyName`, `profExperience`) VALUES (NULL, 'editable', '$telNumber', '$email', '$address', '$socialNetwork', '$education', '$skills', '$aboutMy', '$position', '$companyName', '$profExperience')") or die('Error connect' . mysqli_error($connect));
 
 mysqli_close($connect);
 
-$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' .  mysqli_error($connect));
+$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' . mysqli_error($connect));
 
-$reciveData = mysqli_query($connect, "SELECT * FROM `resume_data` WHERE `type` = 'editable'") or die ('Error connect' .  mysqli_error($connect));
+$reciveData = mysqli_query($connect, "SELECT * FROM `resume_data` WHERE `type` = 'editable'") or die ('Error connect' . mysqli_error($connect));
 
 $result = mysqli_fetch_assoc($reciveData);
 var_dump($result);

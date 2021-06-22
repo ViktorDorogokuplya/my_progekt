@@ -4,6 +4,19 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
+$actions = array('signin', 'signup');
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
+} else {
+    $action = null;
+}
+
+if (in_array($action, $actions)) {
+    $action = "functionality/" . $action . ".php";
+    include "$action";
+    exit();
+}
+
 $default_page = 'pages/resume';
 $process = $_GET['functionality'] ?? null;
 if ($process) {
@@ -33,9 +46,11 @@ $page = in_array($page, array_keys($pages)) ? $page : $default_page;
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/menu.css">
 
-    <title><?php if(!empty($pages[$page])) {
+    <title><?php if (!empty($pages[$page])) {
             echo $pages[$page];
-        }else { echo 'Resume';} ?>
+        } else {
+            echo 'Resume';
+        } ?>
     </title>
 </head>
 <body>

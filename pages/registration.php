@@ -87,14 +87,16 @@
             </div>
         </div>
         <div class="title">
-            <button class="title-button" type="submit">Register Now</button>
+            <button class="title-button" id="button_reg" type="submit">Register Now</button>
         </div>
+        <div class="msg" id="message">
         <?php
         if (isset($_SESSION['massage'])) {
-            echo '<p class="msg">' . $_SESSION['massage'] . '</p>';
+            echo $_SESSION['massage'];
+            unset($_SESSION['massage']);
         }
-        unset($_SESSION['massage']);
         ?>
+        </div>
     </div>
 </form>
 <script
@@ -104,4 +106,5 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js" crossorigin="anonymous">
 </script>
 <script src="../js/checkReg.js"></script>
+<script src="../js/ajaxReg.js"></script>
 </body>

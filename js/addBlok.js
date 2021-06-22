@@ -1,4 +1,3 @@
-
 const addButton = document.getElementById('addNew');
 
 const contactsBloc = document.getElementById('mainFolderContact');
@@ -16,10 +15,7 @@ let nickname = document.createElement('input');
 let inputBloc = document.createElement('div');
 let contactName = document.createElement('input');
 
-function addBlocs () {
-    //create contacts list
-
-    // add select
+function addBlocs() {
 
     contactsSelect.setAttribute('class', 'contacts-select');
     contactsBloc.appendChild(contactsSelect);
@@ -28,8 +24,6 @@ function addBlocs () {
     select.setAttribute('class', 'select-list');
     select.setAttribute('data-toggle-id', 'contact-name');
     contactsSelect.appendChild(select);
-
-    //add option list
 
     optionOne.value = 'skype';
     optionOne.textContent = 'Skype';
@@ -57,7 +51,6 @@ function addBlocs () {
     select.appendChild(optionFive);
     select.appendChild(optionOther);
 
-    // create input
     inputBloc.setAttribute('class', 'input-name');
     contactsBloc.appendChild(inputBloc);
 
@@ -65,7 +58,6 @@ function addBlocs () {
     contactName.setAttribute('style', 'visibility: hidden;');
     inputBloc.appendChild(contactName);
 
-    // create input nickname
     contactsList.setAttribute('class', 'contact-nickname');
     contactsBloc.appendChild(contactsList);
 
@@ -73,9 +65,10 @@ function addBlocs () {
     contactsList.appendChild(nickname);
 
 }
-addButton.onclick  = addBlocs;
 
-document.addEventListener('change', function(event) {
+addButton.onclick = addBlocs;
+
+document.addEventListener('change', function (event) {
     let id = event.target.dataset.toggleId;
     if (!id) return;
     let elem = document.getElementById(id);
@@ -87,12 +80,13 @@ document.addEventListener('change', function(event) {
 });
 
 
-function removeAddBlocs () {
+function removeAddBlocs() {
     let div = document.getElementById('mainFolderContact');
 
-    while(div.firstChild){
+    while (div.firstChild) {
         div.removeChild(div.firstChild);
     }
 }
+
 const resetButton = document.getElementById('reset');
 resetButton.onclick = removeAddBlocs;

@@ -67,11 +67,7 @@ input {
 }
 
 .msg {
-  height: 20px;
   width: 100%;
-  border: 2px solid red;
-  border-radius: 3px;
-  padding: 10px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
