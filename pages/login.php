@@ -35,8 +35,8 @@
                 <button class="title-button" type="submit" value="#">Login</button>
             </div>
             <div class="button-login">
-                <button class="title-button" type="submit" value="#">
-                    <a href="../index.php?tab=functionality/registration" class="button-link">Register</a>
+                <button class="title-button" id="button-registration" type="submit" value="#" onclick="window.location='../index.php?tab=pages/registration'">
+                    Register
                 </button>
             </div>
         </div>
@@ -56,7 +56,7 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"
         crossorigin="anonymous"></script>
-<script src="../js/checkLog.js"></script>
-<script src="../js/ajaxLog.js"></script>
+<script src="../js/checkLogin.js"></script>
+<script src="../js/loginFunctionality.js"></script>
 </body>
 

@@ -1,7 +1,5 @@
 <?php
 
-require_once 'connectionDB.php';
-
 $output = ['success' => false];
 $data = json_decode(file_get_contents('php://input'), true);
 

@@ -4,7 +4,7 @@
     <title>Logout</title>
 </head>
 <body>
-<form class="form" action="../index.php/?functionality=functionality/out" method="post">
+<form class="form" action="../index.php/?functionality=functionality/logout" method="post">
     <div class="container-logout">
         <div class="title">
             <div class="title-item">

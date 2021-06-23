@@ -1,7 +1,6 @@
 <?php
 require_once "functionality/connectionDB.php";
 
-$connect = mysqli_connect('localhost', 'admin', 'password', 'my_db') or die('Error connect' . mysqli_error($connect));
 
 $recive = mysqli_query($connect, "SELECT * FROM `resume_data` WHERE `type` = 'editable'") or die ('Error connect' . mysqli_error($connect));
 
@@ -37,15 +36,15 @@ if (count($content) == 0) {
         <div class="main-profile">
             <h3 class="main-profile-title">PROFILE</h3>
             <p class="main-profile-text">
-                <?php echo $content['about_my']; ?>
+                <?php echo $content['about-my']; ?>
             </p>
         </div>
         <div class="main-professional-experience">
             <h3 class="main-professional-experience_title">PROFESSIONAL EXPERIENCE</h3>
             <div class="work-company">
                 <h4 class="work-company-title"><?php echo $content['position']; ?></h4>
-                <h5 class="work-company-about"><?php echo $content['companyName']; ?></h5>
-                <p class="work-experience-content"><?php echo $content['profExperience']; ?></p>
+                <h5 class="work-company-about"><?php echo $content['company-name']; ?></h5>
+                <p class="work-experience-content"><?php echo $content['prof-experience']; ?></p>
 
             </div>
         </div>

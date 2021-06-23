@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$actions = array('signin', 'signup');
+$actions = array('signin', 'signup', 'changeData');
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 } else {

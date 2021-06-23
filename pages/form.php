@@ -186,9 +186,9 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"
         crossorigin="anonymous"></script>
-<script src="../js/app.js"></script>
-<script src="../js/validation.js"></script>
-<script src="../js/addBlok.js"></script>
+<!--<script src="../js/sendDataForm.js"></script>-->
+<script src="../js/validationForm.js"></script>
+<script src="../js/addFormBlok.js"></script>
 </body>
 </html>
   

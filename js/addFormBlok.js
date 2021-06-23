@@ -83,7 +83,7 @@ document.addEventListener('change', function (event) {
 function removeAddBlocs() {
     let div = document.getElementById('mainFolderContact');
 
-    while (div.firstChild) {
+    if (div.firstChild) {
         div.removeChild(div.firstChild);
     }
 }
