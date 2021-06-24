@@ -16,6 +16,10 @@ textarea {
   width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .about,
 .about-button {
   margin-bottom: 20px;
@@ -66,10 +70,25 @@ textarea {
 }
 
 .contacts,
-.mainFolderContact {
+.contact-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.contact-container > * {
+  margin-left: 10px;
+}
+
+.contact-container > *:first-child {
+  margin-left: 0;
+}
+
+.delete-contact-btn {
+  height: 30px;
+  background-color: #9e9898;
+  border-radius: 5px;
+  border: none;
 }
 
 .contacts-select,
@@ -78,20 +97,23 @@ textarea {
   display: inline-block;
   width: 30%;
 }
-#contact-name,
+
+.contact-name,
 .nickname {
   background-color: #ffffff;
-  /* padding-top: 5px; */
   border: 2px solid #aaa6a6;
   border-radius: 5px;
   height: 30px;
+}
+
+.contact-name {
+  visibility: hidden;
 }
 
 .select-list {
   background-color: #ffffff;
   border: 2px solid #aaa6a6;
   border-radius: 5px;
-  height: 30px;
   height: 35px;
 }
 
@@ -150,8 +172,7 @@ textarea {
   margin-left: 60px;
 }
 
-.button-next {
-  margin-left: 60px;
+.button-cancel {
   width: 150px;
   height: 30px;
   background-color: #9e9898;

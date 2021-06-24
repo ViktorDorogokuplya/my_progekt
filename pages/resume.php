@@ -1,7 +1,6 @@
 <?php
 require_once "functionality/connectionDB.php";
 
-
 $recive = mysqli_query($connect, "SELECT * FROM `resume_data` WHERE `type` = 'editable'") or die ('Error connect' . mysqli_error($connect));
 
 $content = mysqli_fetch_array($recive);

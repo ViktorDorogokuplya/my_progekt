@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="gender-item">
-                    <input id="female" tabindex="4" type="radio" name="gender" value="female"/>
+                    <input id="female" tabindex="4" type="radio" name="gender" value="female" />
                 </div>
                 <div class="gender-item">
                     <p class="gender-text">Female</p>
@@ -93,9 +93,7 @@
                 <p class="about-text">Contacts</p>
             </div>
             <div class="block-input">
-                <div id="mainFolderContact" class="contacts">
-                </div>
-                <!--            -->
+                <div id="contacts-container" class="contacts-container"></div>
                 <div class="contacts">
                     <div class="contacts-button">
                         <button id="reset" class="button-reset" type="reset" value="Reset">
@@ -106,7 +104,7 @@
                         <p class="contacts-text-all">or</p>
                     </div>
                     <div class="contacts-button">
-                        <button id="addNew" class="button-add" type="button" value="Add new">
+                        <button id="add-contact" class="button-add" type="button" value="Add new">
                             Add new
                         </button>
                     </div>
@@ -167,17 +165,14 @@
         <div class="about">
             <div class="about-button">
                 <div class="about-update">
-                    <button id="btn-update" class="button-update" type="submit" value="Update profile">Update profile
-                    </button>
+                    <button id="btn-update" class="button-update" type="submit" value="Update profile">Update profile</button>
                 </div>
-                <div class="about-next">
-                    <button id="btn-next" class="button-next" type="reset">Cancel</button>
+                <div class="about-cancel">
+                    <button id="button-cancel" class="button-cancel" type="reset">Cancel</button>
                 </div>
             </div>
         </div>
-        <div class="about">
-            <pre id="form-data"></pre>
-        </div>
+        <div class="about"><pre id="form-data"></pre></div>
     </div>
 </form>
 <script
@@ -186,9 +181,8 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"
         crossorigin="anonymous"></script>
-<!--<script src="../js/sendDataForm.js"></script>-->
 <script src="../js/validationForm.js"></script>
-<script src="../js/addFormBlok.js"></script>
+<script src="../js/addFormBlock.js"></script>
 </body>
 </html>
   

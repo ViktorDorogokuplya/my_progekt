@@ -36,6 +36,3 @@ $(document).ready(function (e) {
     })
 
 })
-
-// let buttonRegistration = document.querySelector('#button-registration');
-// buttonRegistration.onclick = window.location.href = '../index.php?tab=functionality/registration';

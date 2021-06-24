@@ -34,10 +34,9 @@ $(document).ready(function (e) {
             dataType: 'json',
             success: function (data) {
                 if (data.success) {
-
-                    window.location.href = '/';
                     console.log(data)
                     $('#message').text('You are change data');
+                    window.location.href = 'index.php';
                 } else if (typeof data.message != 'undefined') {
                     $('#message').text(data.message);
                 }
